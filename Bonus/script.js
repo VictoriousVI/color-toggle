@@ -16,7 +16,7 @@ const menuDown = function() {
     });
 };
 
-// Change background color radio & buttons.
+// Change background color with radio & buttons.
 const colorChange = function(e) {
     const getBtnColor = e.target;
     const getRadioButtons = document.querySelectorAll("#toggle-menu ul li input");
@@ -51,7 +51,7 @@ const colorChange = function(e) {
     toggleMenuStatus = false;
 };
 
-// Change background color keys.
+// Change background color with keys.
 const numberPress = function(e) {
     if (e.key === "1") {
         getBodyElement.style.backgroundColor = "#808080";
@@ -74,7 +74,6 @@ const numberPress = function(e) {
         getTextColorName.innerHTML = "Red";
     } 
     if (e.key === "5") {
-        getBodyElement.style.backgroundColor = "#808080";
         getBodyElement.style.backgroundColor = "#f0e68c";
         document.getElementById("yellow").checked = true;
         getTextColorName.innerHTML = "Yellow";
